@@ -16,6 +16,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { Textarea } from "@/components/ui/textarea";
+import { CiImageOn } from "react-icons/ci";
+import { Input } from "@/components/ui/input";
+
 
 export default function Home() {
   const { messages, input, handleInputChange, handleSubmit } = useChat({
@@ -226,6 +229,17 @@ export default function Home() {
               <ArrowUpIcon className="w-4 h-4" />
               <span className="sr-only">Send</span>
             </Button>
+            {/* <form>
+            <Input type="file" name="file" accept=".png"/>
+            <Button
+              type="submit"
+              size="icon"
+              className="absolute top-3 right-12 w-8 h-8"
+            >
+              <CiImageOn className="w-4 h-4"/>
+              <span className="sr-only">Send</span>
+            </Button>
+            </form> */}
           </div>
           <p className="text-xs text-center text-neutral-700 font-medium">
             ChatGPT can make mistakes. Consider checking important information.
